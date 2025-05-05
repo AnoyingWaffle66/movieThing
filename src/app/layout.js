@@ -6,11 +6,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <header>
-
+        <header className="flex justify-center items-center space-x-4">
+          <Link href={"/"}>Home page</Link>
+          <Link href={"/movies"}>Movies page</Link>
         </header>
         
-        <section>
+        <section className="mt-5">
           {children}
         </section>
       
